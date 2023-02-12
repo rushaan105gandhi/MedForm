@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Medical Form</title>
+    <link rel="icon" type="image/png" href="srmLogo.png">
+</head>
+<body>
+    <header>
+        <h1><center> Student Medical Leave Application Form </center></h1>
+        <div class="Logo">
+            <figure>
+                <center><img src="srmLogo.png" height="15%" width="15%" alt="SRM Hospital"></center>
+                <figcaption align="center">
+                    SRM Hospital
+                </figcaption>
+            </figure>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#emergency_arrival"> Emergency Arrival</a></li>
+            <li><a href="#personal_details"> Personal Details</a></li>
+            <li><a href="#medical_history"> Medical History</a></li>
+        </ul>
+    </nav>
+    <div class="Form">
+        <form method="post" autocomplete="on">
+            <fieldset>
+                <legend align="center">
+                    <h2>Student Medical Form</h2>
+                </legend>                
+                <p>
+                    <section id="emergency_arrival">
+                        <p>
+                            <center>
+                                <h3>Emergency Arrival</h3>
+                            </center>                            
+                        </p>
+                        <br>
+                        &emsp;Date and Time:
+                    <input type="datetime-local" name="" id=""> &emsp;&emsp;
+                    Temprature:
+                    <input type="text" name="Temprature" id="">&emsp;&emsp;
+                    Blood Pressue:
+                    <input type="text" name="Bp">&emsp;&emsp;
+                    Diabeties:
+                    <datalist id="id1">
+                        <option value="Yes"></option>
+                        <option value="No"></option>
+                    </datalist>
+                    <input type="text" placeholder="Select Yes or No" list="id1">
+                </p>
+                <hr>
+                    </section>                    
+                <p>
+                    &emsp;
+                    <section id="personal_details">
+                    <p>
+                        <center>
+                            <h3>Personal Details</h3>
+                        </center>
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;
+                        First Name:
+                        <input type="text" name="first_name">&emsp;&emsp;
+                        Last Name:
+                        <input type="text" name="last_name">&emsp;&emsp;
+                        Age:
+                        <input type="text" name="age">&emsp;&emsp;
+                        Weight:
+                        <input type="text" name="" id="">
+                    </p>
+                    <br>
+                    <p class="Gender">&emsp;
+                        Gender:
+                        <p>
+                            &emsp;
+                            Male:
+                            <input type="radio" name="gender" value="male">
+                            &emsp;&emsp;
+                            Female:
+                            <input type="radio" name="gender" value="female">
+                        </p>
+                        <br>
+                    </p>
+                    <p>
+                        &emsp;Reg. Number:
+                        <input type="text" name="reg_number">
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;Phone Number:
+                        <input type="tel" placeholder="(+91 xxx-xxxxxxx)" maxlength="15" required>
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;Email:
+                        <input type="email" placeholder="name@domain.com" required>
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;Student Address:
+                        <input type="text" name="address">
+                    </p>&emsp;
+                    <hr>
+                    </section>
+                    <section id="medical_history">
+                        <p>
+                            <center>
+                                <h3>Medical History</h3>
+                            </center>
+                        </p>
+                    </section>                                
+                <p>
+                    &emsp;Allergies:
+                    <input type="text" name="allergies">
+                    &emsp;&emsp;Current Medications:
+                    <input type="text" name="currMed" id="">
+                    &emsp;&emsp;OPD Reference:
+                    <datalist id="id2">
+                        <option value="Srm Hospital"></option>
+                        <option value="outside"></option>
+                    </datalist>
+                    <input type="text" placeholder="Srm hospital or outside" list="id2">
+                    &emsp;&emsp;Reference id:
+                    <input type="text" placeholder="XXXXXXXXXX" name="id" id="">
+                </p>
+                <hr>
+                <p>
+                    <center>
+                        <input type="submit" value="Submit">
+                        &emsp;&emsp;
+                        <input type="reset" value="Clear">
+                    </center>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
